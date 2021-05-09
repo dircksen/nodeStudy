@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="./mvp.css" />
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-auth.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js" defer></script>
+
+  </head>
+  <body>
+    <main>
+      <section>
+        <form id="login">
+          <label>Name <span class="warning">*</span></label>
+          <input type="name" name="name" />
+          <label>Email <span class="warning">*</span></label>
+          <input type="email" name="email" />
+          <label>Password <span class="warning">*</span></label>
+          <input type="password" name="password" />
+          <button>Log in</button>
+        </form>
+      </section>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.js"></script>
+      <script>
+        document
+          .getElementById("login")
+          .addEventListener("submit", (event) => {
+            event.preventDefault();
+            const name = event.target.name.value;
+            const email = event.target.email.value;
+            const password = event.target.password.value;
+
+            axios.post('http://localhost:3000/auth/register',{
+                body:{
+                    name: name,
+                    email: email,
+                    password: password
+                }
+            })
+            .then(response => console.log(response))
+            .catch(error => console.log(error))
+        });
+      </script>
+    </main>
+  </body>
+</html>

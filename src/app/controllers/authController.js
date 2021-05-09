@@ -16,18 +16,26 @@ function generateToken(params){
 } 
 
 router.post('/register', async (req,res) => {
-    const {email} = req.body;
+    const {email,name,password} = req.body;
+
     try{
 
         if(await User.findOne({email}))
-            return res.status(400).send({error: 'User already registered'})
+            return res.status(400).send({error: 'User already registered'});
 
-        const user = await User.create(req.body);
+        if(!email || !name || !password){
+            return res.status(400).send({error: req.body});
+            // email = req.body.email;
+            // name = req.body.name;
+            // password = req.body.password;
+        }
+
+        const user = await User.create({name,password,email});
         user.password = undefined;
 
         return res.send({user, token: generateToken({id: user.id})});
     }catch(err){
-        return res.status(400).send({error: 'Registration Fail'});
+        return res.status(400).send({error: err});
     }
 });
 

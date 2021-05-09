@@ -50,7 +50,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ### Autor
 ---
 
-<a href="https://blog.rocketseat.com.br/author/thiago/">
+<a href="https://github.com/dircksen">
  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33484438?v=4" width="100px;" alt=""/>
  <br />
  <sub><b>Filipe Dircksen</b></sub></a> <a href="https://github.com/dircksen" title="GitHub">💻</a>
@@ -59,4 +59,4 @@ As seguintes ferramentas foram usadas na construção do projeto:
 Feito com ❤️ por Filipe Dircksen 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Filipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/filipe-dircksen/)](https://www.linkedin.com/in/filipe-dircsken/) 
-[![Instagram Badge](https://img.shields.io/badge/-@fds7k-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=instagram&logoColor=white&link=https://instagram/fds7k)](https://instagram/fds7k)
+[![Instagram Badge](https://img.shields.io/badge/-@fds7k-de356d?style=flat-square&labelColor=1ca0f1&logo=instagram&logoColor=de356d&link=https://www.instagram.com/fds7k/)](https://www.instagram.com/fds7k/)

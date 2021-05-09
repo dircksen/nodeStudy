@@ -8,7 +8,7 @@
 - [x] Cadastro de usuário.
 - [x] Autenticação de Login.
 - [x] Reset password usando mailer.
-- [] Crud Inicial
+- [ ] Crud Inicial
 
 
 ### Pré-requisitos

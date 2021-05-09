@@ -4,6 +4,10 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
+app.set('view engine', 'html');
+
+app.engine('html', require('ejs').renderFile);
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 

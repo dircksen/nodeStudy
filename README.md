@@ -9,6 +9,7 @@
 - [x] Autenticação de Login.
 - [x] Reset password usando mailer.
 - [x] Crud Inicial (Projetos e Tarefas)
+- [ ] FireBase Authentication
 
 
 ### Pré-requisitos

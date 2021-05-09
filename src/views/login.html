@@ -14,8 +14,8 @@
     <main>
       <section>
         <form id="login">
-          <label>Login</label>
-          <input type="text" name="login" />
+          <label>Name</label>
+          <input type="text" name="name" />
           <label>Password</label>
           <input type="password" name="password" />
           <button>Log in</button>
@@ -28,9 +28,17 @@
           document
             .getElementById("login")
             .addEventListener("submit", (event) => {
-              event.preventDefault();
+                const name = event.target.login.value;
+                const pass = event.target.password.value;
+                axios.post("/auth/register", {
+                    method: "POST",
+                    headers: {
+                      Accept: "application/json",
+                      "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({ name: name, password: pass }),
+                  }).then(window.location.assign("/homePage"));
             });
-
         });
       </script>
     </main>

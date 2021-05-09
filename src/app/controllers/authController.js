@@ -5,6 +5,7 @@ const authConfig = require('../../config/auth.json')
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const crypto = require('crypto');
+const mailer = require('../../modules/mailer');
 
 function generateToken(params){
     const token = jwt.sign( params, authConfig.secret,{
@@ -67,10 +68,46 @@ router.post('/forgot_password', async(req,res)=>{
             }
         });
 
-        console.log(token,now);
+        mailer.sendMail({
+            to: email,
+            from: 'filipeduf@gmail.com',
+            template: 'auth/forgot_password',
+            context: {token},
+        }, (err)=>{
+            console.log(err);
+            if(err) return res.status(400).send({error: 'Error on forgot password, try again'});
+
+            return res.send();
+        })     
     }catch(err){
         return res.status(400).send({error:'Unexpected Error'})
     }
 });
+
+router.post('/reset_password', async(req,res)=>{
+    const {email, token, password} = req.body;
+
+    try{        
+        const user = await User.findOne({email})
+        .select('+passwordResetToken +passwordResetExpires');
+
+        if(!user)
+            return res.status(400).send({error: 'User not found'});
+
+        if(token !== user.passwordResetToken)
+            return res.status(400).send({error: 'Token Invalid'});
+            
+        if(new Date() > user.passwordResetExpires)
+            return res.status(400).send({error: 'Token Expired, generate a new one!'});
+
+        user.password = password;
+        await user.save();
+        
+        res.send();
+    }catch(err){
+        console.log(err);
+        return res.status(400).send({error:'Cannot reset password'})
+    }
+ });
 
 module.exports = app=>app.use('/auth', router);

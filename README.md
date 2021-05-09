@@ -51,11 +51,12 @@ As seguintes ferramentas foram usadas na construção do projeto:
 ---
 
 <a href="https://blog.rocketseat.com.br/author/thiago/">
- <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/380327?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
+ <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/33484438?v=4" width="100px;" alt=""/>
  <br />
- <sub><b>Filipe Dircksen</b></sub></a> <a href="https://blog.rocketseat.com.br/author/thiago//" title="Rocketseat">🚀</a>
+ <sub><b>Filipe Dircksen</b></sub></a> <a href="https://github.com/dircksen" title="GitHub">💻</a>
 
 
 Feito com ❤️ por Filipe Dircksen 👋🏽 Entre em contato!
 
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/filipedircksen/)](https://www.linkedin.com/in/filipedircsken/) 
+[![Linkedin Badge](https://img.shields.io/badge/-Filipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/filipe-dircksen/)](https://www.linkedin.com/in/filipe-dircsken/) 
+[![Instagram Badge](https://img.shields.io/badge/-@fds7k-1ca0f1?style=flat-square&labelColor=1ca0f1&logo=instagram&logoColor=white&link=https://instagram/fds7k)](https://instagram/fds7k)

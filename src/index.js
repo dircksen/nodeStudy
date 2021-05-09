@@ -7,9 +7,9 @@ const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 
-// app.get('/', (req,res)=>{
-//     res.send('OK');
-// });
+app.get('/', (req,res)=>{
+    res.send('API is working!');
+});
 
 require('./app/controllers/index')(app);
 

@@ -56,7 +56,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
  <sub><b>Filipe Dircksen</b></sub></a> <a href="https://github.com/dircksen" title="GitHub">💻</a>
 
 
-Feito com ❤️ por Filipe Dircksen 👋🏽 Entre em contato!
+Feito por Filipe Dircksen 👋🏽 Entre em contato!
 
 [![Linkedin Badge](https://img.shields.io/badge/-Filipe-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/filipe-dircksen/)](https://www.linkedin.com/in/filipe-dircsken/) 
 [![Instagram Badge](https://img.shields.io/badge/-@fds7k-de356d?style=flat-square&logo=instagram&logoColor=white&link=https://www.instagram.com/fds7k/)](https://www.instagram.com/fds7k/)
